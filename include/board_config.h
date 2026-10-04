@@ -1,0 +1,10 @@
+#ifndef CONVERTER_BOARD_CONFIG_H
+#define CONVERTER_BOARD_CONFIG_H
+/* KiCad 9.0 schematic: U601 GPIO4/5 -> R608/R609 (22 ohm) -> U206/U301. */
+#define BOARD_MDIO_PIN 4u
+#define BOARD_MDC_PIN 5u
+#define BOARD_MDC_HZ 50000u
+#define BOARD_MDIO_IDLE_US 20u
+#define BOARD_PHY_STARTUP_MS 100u
+/* No GPIO reset: U206/U301 RESET_N shares U601 RUN and U604 RESET. */
+#endif

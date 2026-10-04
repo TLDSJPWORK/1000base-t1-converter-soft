@@ -1,0 +1,3663 @@
+{
+  "source": "1000base-t1-converter.kicad_sch",
+  "sha256": {
+    "1000base-t1-converter.kicad_sch": "8671466f502bb807748ccc2ea3cad4585c9afba949d94d68f33a9b55802f8613",
+    "DP83867.kicad_sch": "ea6dbeef47ba0d5e0bd44dba4850a7e887f1e323af9dff55cd907de02c6a82b6",
+    "DP83TG720.kicad_sch": "2bfef88832683ec0fa30e439b523f9e7a96a52dbda9652bb8e640351c4304501",
+    "Power.kicad_sch": "033050160d7e59a1da7220aea5fb30917da546387c32324bf1fee72fe70a14a6",
+    "RJ45.kicad_sch": "be175a06a1691977088916a4aacf7e18c24b759a2b87d16f6a21169e9e2d5ceb",
+    "RP2040.kicad_sch": "9a05cbad667cbf3bed45ec609839d20e31443f11df2af5036d3647b161567c9a"
+  },
+  "components": {
+    "C201": "0.1uF",
+    "C202": "0.1uF",
+    "C203": "0.1uF",
+    "C204": "0.1uF",
+    "C205": "1kV 4700pF",
+    "C206": "50V 22pF",
+    "C207": "50V 22pF",
+    "C208": "10V 10uF",
+    "C209": "10V 10uF",
+    "C210": "1uF",
+    "C211": "0.1uF",
+    "C212": "50V 0.01uF",
+    "C213": "0.1uF",
+    "C214": "50V 0.01uF",
+    "C215": "0.1uF",
+    "C216": "0.1uF",
+    "C217": "0.1uF",
+    "C218": "10V 10uF",
+    "C219": "25V 10uF",
+    "C220": "0.1uF",
+    "C221": "0.1uF",
+    "C222": "10V 10uF",
+    "C223": "10V 10uF",
+    "C224": "1uF",
+    "C225": "0.1uF",
+    "C226": "50V 0.01uF",
+    "C227": "10V 10uF",
+    "C228": "10V 10uF",
+    "CN201": "WJ2EDGR-5.08-2P",
+    "L201": "DLW32MH201XK2L",
+    "L202": "BLM18KG102BH1D",
+    "L203": "BLM18KG102BH1D",
+    "L204": "BLM18KG102BH1D",
+    "R201": "2.2k",
+    "R202": "2.2k",
+    "R203": "2.49k",
+    "R204": "2.49k",
+    "R205": "1.0k 0.25W",
+    "R206": "1.0k 0.25W",
+    "R207": "2.2k",
+    "R208": "2.49k",
+    "R209": "2.2k",
+    "R210": "1M 0.25W",
+    "R211": "2.49k",
+    "R212": "2.2k",
+    "R213": "2.2k",
+    "R214": "22",
+    "R215": "22",
+    "R216": "100",
+    "R217": "22",
+    "R218": "22",
+    "R219": "10.0k",
+    "R220": "22",
+    "R221": "22",
+    "R222": "1k",
+    "U201": "PSC-1608U52GC-G4",
+    "U202": "PSC-1608U52GC-G4",
+    "U203": "SMQP-02R-TP",
+    "U204": "PSC-1608U52GC-G4",
+    "U205": "SMQP-02R-TP",
+    "U206": "DP83TG720RWRHATQ1",
+    "U207": "ABM8AIG-25.000MHZ-12-2Z-T3",
+    "U208": "TPS7B8233QDGNRQ1",
+    "C301": "10V 10uF",
+    "C302": "1uF",
+    "C303": "50V 0.01uF",
+    "C304": "0.1uF",
+    "C305": "50V 0.01uF",
+    "C306": "0.1uF",
+    "C307": "50V 0.01uF",
+    "C308": "0.1uF",
+    "C309": "50V 0.01uF",
+    "C310": "0.1uF",
+    "C311": "10V 10uF",
+    "C312": "1uF",
+    "C313": "50V 0.01uF",
+    "C314": "0.1uF",
+    "C315": "50V 0.01uF",
+    "C316": "0.1uF",
+    "C317": "10V 10uF",
+    "C318": "1uF",
+    "C319": "50V 0.01uF",
+    "C320": "0.1uF",
+    "C321": "50V 0.01uF",
+    "C322": "0.1uF",
+    "C323": "50V 0.01uF",
+    "C324": "0.1uF",
+    "L301": "BLM18KG102BH1D",
+    "L302": "BLM18KG102BH1D",
+    "L303": "BLM18KG102BH1D",
+    "R301": "2.2k",
+    "R302": "22",
+    "R303": "11k",
+    "R304": "22",
+    "R305": "22",
+    "R306": "22",
+    "R307": "22",
+    "R308": "22",
+    "U301": "DP83867ERGZR",
+    "U302": "25V 27pF",
+    "U303": "25V 27pF",
+    "X301": "NX5032GA-25.000M-STD-CSK-4",
+    "C401": "0.1uF",
+    "C402": "25V 10uF",
+    "C403": "2.2uF",
+    "C404": "47uF",
+    "C405": "1uF",
+    "C406": "1uF",
+    "C407": "0.1uF",
+    "C408": "2.2uF",
+    "C409": "47uF",
+    "D401": "B160-13-F",
+    "D402": "PSC-1608U52GC-G4",
+    "D403": "B160-13-F",
+    "L401": "15uH",
+    "L402": "15uH",
+    "NT3": "NetTie_2",
+    "R401": "1.30k",
+    "R402": "3.40k",
+    "R403": "4.42k",
+    "R404": "1.02k",
+    "R405": "22k",
+    "R406": "2.26k",
+    "R407": "1.02k",
+    "U401": "LMR14206XMKX/NOPB",
+    "U402": "TPS74701DRCR",
+    "U403": "LMR14206XMKX/NOPB",
+    "C501": "0.1uF",
+    "C502": "0.1uF",
+    "C503": "0.1uF",
+    "C504": "0.1uF",
+    "C505": "1kV 0.01uF",
+    "R501": "5.76k",
+    "R502": "470",
+    "R503": "470",
+    "R504": "2.49k",
+    "R505": "1M 0.25W",
+    "RJ501": "HR911130A",
+    "C601": "0.1uF",
+    "C602": "0.1uF",
+    "C603": "0.1uF",
+    "C604": "0.1uF",
+    "C605": "0.1uF",
+    "C606": "0.1uF",
+    "C607": "0.1uF",
+    "C608": "1uF",
+    "C609": "0.1uF",
+    "C610": "0.1uF",
+    "C611": "1uF",
+    "C612": "1kV 0.01uF",
+    "C613": "2.2uF",
+    "C614": "0.1uF",
+    "C615": "27pF",
+    "C616": "27pF",
+    "C617": "0.1uF",
+    "D601": "MBR120VLSFT1G",
+    "J601": "Conn_02x20_Counter_Clockwise",
+    "J602": "Conn_01x03_Pin",
+    "LED601": "TJ-S1608CY6T5ALC7K-A5",
+    "LED602": "XL-1608SURC-06",
+    "NT1": "NetTie_2",
+    "NT2": "NetTie_2",
+    "R601": "5.1k",
+    "R602": "5.6k",
+    "R603": "5.1k",
+    "R604": "10.0k",
+    "R605": "27",
+    "R606": "27",
+    "R607": "1M 0.25W",
+    "R608": "22",
+    "R609": "22",
+    "R610": "1k",
+    "R611": "DNF",
+    "R612": "470",
+    "R613": "1M 0.25W",
+    "R614": "2.2k",
+    "R615": "1k",
+    "SW601": "TS-1101-C-W",
+    "SW602": "TS-1101-C-W",
+    "U601": "RP2040",
+    "U602": "W25Q16JVUXIQ",
+    "U603": "ABLS-12.000MHZ-B4-T",
+    "U604": "TPS3838K33QDBVRQ1",
+    "USB601": "TYPE-C 16PIN 2MD(073)"
+  },
+  "nets": [
+    {
+      "name": "+1V0_867",
+      "nodes": [
+        {
+          "ref": "C301",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C302",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "input"
+        },
+        {
+          "ref": "C303",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C304",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C305",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C306",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C307",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C308",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C309",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C310",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L302",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "24",
+          "pinfunction": "VDD1P0",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U301",
+          "pin": "31",
+          "pinfunction": "VDD1P0",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U301",
+          "pin": "42",
+          "pinfunction": "VDD1P0",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U301",
+          "pin": "6",
+          "pinfunction": "VDD1P0",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "name": "+1V1",
+      "nodes": [
+        {
+          "ref": "C609",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C610",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C611",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "input"
+        },
+        {
+          "ref": "U601",
+          "pin": "23",
+          "pinfunction": "DVDD",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U601",
+          "pin": "45",
+          "pinfunction": "VREG_VOUT",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U601",
+          "pin": "50",
+          "pinfunction": "DVDD",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "name": "+2V5_867",
+      "nodes": [
+        {
+          "ref": "C311",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C312",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "input"
+        },
+        {
+          "ref": "C313",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C314",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C315",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C316",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L301",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "3",
+          "pinfunction": "VDDA2P5",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U301",
+          "pin": "9",
+          "pinfunction": "VDDA2P5",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "name": "+3V3",
+      "nodes": [
+        {
+          "ref": "C208",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C222",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C404",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C405",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "input"
+        },
+        {
+          "ref": "C617",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J601",
+          "pin": "36",
+          "pinfunction": "Pin_36",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L202",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L203",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L303",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L401",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "NT1",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "NT3",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R201",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R203",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R208",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R209",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R212",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R213",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R219",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R402",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R501",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R503",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R613",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "input"
+        },
+        {
+          "ref": "R614",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U604",
+          "pin": "5",
+          "pinfunction": "VDD",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "name": "+3V3_867",
+      "nodes": [
+        {
+          "ref": "C317",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C318",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "input"
+        },
+        {
+          "ref": "C319",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C320",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C321",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C322",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C323",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C324",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L303",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R301",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "19",
+          "pinfunction": "VDDIO",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U301",
+          "pin": "30",
+          "pinfunction": "VDDIO",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U301",
+          "pin": "41",
+          "pinfunction": "VDDIO",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/720_RX_CLK",
+      "nodes": [
+        {
+          "ref": "R214",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "27",
+          "pinfunction": "RX_CLK",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/720_RX_CTRL",
+      "nodes": [
+        {
+          "ref": "R221",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "15",
+          "pinfunction": "RX_CTRL",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/720_RX_D0",
+      "nodes": [
+        {
+          "ref": "R215",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "26",
+          "pinfunction": "RX_D0",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/720_RX_D1",
+      "nodes": [
+        {
+          "ref": "R217",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "25",
+          "pinfunction": "RX_D1",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/720_RX_D2",
+      "nodes": [
+        {
+          "ref": "R208",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R218",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "24",
+          "pinfunction": "RX_D2/RX_P",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/720_RX_D3",
+      "nodes": [
+        {
+          "ref": "R220",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "23",
+          "pinfunction": "RX_D3/RX_M",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/EN",
+      "nodes": [
+        {
+          "ref": "C217",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C218",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "7",
+          "pinfunction": "VSLEEP",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U208",
+          "pin": "8",
+          "pinfunction": "OUT",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/INH",
+      "nodes": [
+        {
+          "ref": "R212",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "10",
+          "pinfunction": "INH",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/INT",
+      "nodes": [
+        {
+          "ref": "R209",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "2",
+          "pinfunction": "INT_N",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/LED_0",
+      "nodes": [
+        {
+          "ref": "U203",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U203",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "35",
+          "pinfunction": "LED_0/GPIO_0",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/LED_1",
+      "nodes": [
+        {
+          "ref": "R202",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R204",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "6",
+          "pinfunction": "LED_1/GPIO_1",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/TRD_N",
+      "nodes": [
+        {
+          "ref": "L201",
+          "pin": "4",
+          "pinfunction": "4",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "13",
+          "pinfunction": "TRD_M",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/TRD_P",
+      "nodes": [
+        {
+          "ref": "L201",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "12",
+          "pinfunction": "TRD_P",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/VDD1P0",
+      "nodes": [
+        {
+          "ref": "C203",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C204",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C221",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C228",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L204",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "21",
+          "pinfunction": "VDD1P0",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U206",
+          "pin": "9",
+          "pinfunction": "VDD1P0",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/VDDA3P3",
+      "nodes": [
+        {
+          "ref": "C223",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C224",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "input"
+        },
+        {
+          "ref": "C225",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C226",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L203",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "11",
+          "pinfunction": "VDDA",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/VDDIO",
+      "nodes": [
+        {
+          "ref": "C209",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C210",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "input"
+        },
+        {
+          "ref": "C211",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C212",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C213",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C214",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C215",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C216",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L202",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "22",
+          "pinfunction": "VDDIO",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U206",
+          "pin": "34",
+          "pinfunction": "VDDIO",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/WAKE_720",
+      "nodes": [
+        {
+          "ref": "U205",
+          "pin": "3",
+          "pinfunction": "3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U205",
+          "pin": "4",
+          "pinfunction": "4",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "8",
+          "pinfunction": "WAKE",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/XI",
+      "nodes": [
+        {
+          "ref": "R216",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "output"
+        },
+        {
+          "ref": "U206",
+          "pin": "5",
+          "pinfunction": "XI",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "/DP83TG720/XO",
+      "nodes": [
+        {
+          "ref": "R222",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "4",
+          "pinfunction": "XO",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/720_TX_CLK",
+      "nodes": [
+        {
+          "ref": "R308",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "28",
+          "pinfunction": "TX_CLK",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/720_TX_CTRL",
+      "nodes": [
+        {
+          "ref": "R302",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "29",
+          "pinfunction": "TX_CTRL",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/720_TX_D0",
+      "nodes": [
+        {
+          "ref": "R307",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "33",
+          "pinfunction": "TX_D0/TX_M",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/720_TX_D1",
+      "nodes": [
+        {
+          "ref": "R306",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "32",
+          "pinfunction": "TX_D1/TX_P",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/720_TX_D2",
+      "nodes": [
+        {
+          "ref": "R305",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "31",
+          "pinfunction": "TX_D2",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/720_TX_D3",
+      "nodes": [
+        {
+          "ref": "R304",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "30",
+          "pinfunction": "TX_D3",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_RX_CLK",
+      "nodes": [
+        {
+          "ref": "R308",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "32",
+          "pinfunction": "RX_CLK",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_RX_CTRL",
+      "nodes": [
+        {
+          "ref": "R302",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "38",
+          "pinfunction": "RX_CTRL",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_RX_D0",
+      "nodes": [
+        {
+          "ref": "R307",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "33",
+          "pinfunction": "RX_D0/SGMII_COP",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_RX_D1",
+      "nodes": [
+        {
+          "ref": "R306",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "34",
+          "pinfunction": "RX_D1/SGMII_CON",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_RX_D2",
+      "nodes": [
+        {
+          "ref": "R305",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "35",
+          "pinfunction": "RX_D2/SGMII_SOP",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_RX_D3",
+      "nodes": [
+        {
+          "ref": "R304",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "36",
+          "pinfunction": "RX_D3/SGMII_SON",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TD_A_N",
+      "nodes": [
+        {
+          "ref": "RJ501",
+          "pin": "MDI0-",
+          "pinfunction": "MDI0-",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U301",
+          "pin": "2",
+          "pinfunction": "TD_M_A",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TD_A_P",
+      "nodes": [
+        {
+          "ref": "RJ501",
+          "pin": "MDI0+",
+          "pinfunction": "MDI0+",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U301",
+          "pin": "1",
+          "pinfunction": "TD_P_A",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TD_B_N",
+      "nodes": [
+        {
+          "ref": "RJ501",
+          "pin": "MDI1-",
+          "pinfunction": "MDI1-",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U301",
+          "pin": "5",
+          "pinfunction": "TD_M_B",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TD_B_P",
+      "nodes": [
+        {
+          "ref": "RJ501",
+          "pin": "MDI1+",
+          "pinfunction": "MDI1+",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U301",
+          "pin": "4",
+          "pinfunction": "TD_P_B",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TD_C_N",
+      "nodes": [
+        {
+          "ref": "RJ501",
+          "pin": "MDI2+",
+          "pinfunction": "MDI2+",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U301",
+          "pin": "8",
+          "pinfunction": "TD_M_C",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TD_C_P",
+      "nodes": [
+        {
+          "ref": "RJ501",
+          "pin": "MDI2-",
+          "pinfunction": "MDI2-",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U301",
+          "pin": "7",
+          "pinfunction": "TD_P_C",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TD_D_N",
+      "nodes": [
+        {
+          "ref": "RJ501",
+          "pin": "MDI3-",
+          "pinfunction": "MDI3-",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U301",
+          "pin": "11",
+          "pinfunction": "TD_M_D",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TD_D_P",
+      "nodes": [
+        {
+          "ref": "RJ501",
+          "pin": "MDI3+",
+          "pinfunction": "MDI3+",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U301",
+          "pin": "10",
+          "pinfunction": "TD_P_D",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TX_CLK",
+      "nodes": [
+        {
+          "ref": "R214",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "29",
+          "pinfunction": "GTX_CLK",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TX_CTRL",
+      "nodes": [
+        {
+          "ref": "R221",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "37",
+          "pinfunction": "TX_CTRL",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TX_D0",
+      "nodes": [
+        {
+          "ref": "R215",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "28",
+          "pinfunction": "TX_D0/SGMII_SIN",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TX_D1",
+      "nodes": [
+        {
+          "ref": "R217",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "27",
+          "pinfunction": "TX_D1/SGMII_SIP",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TX_D2",
+      "nodes": [
+        {
+          "ref": "R218",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "26",
+          "pinfunction": "TX_D2",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/867_TX_D3",
+      "nodes": [
+        {
+          "ref": "R220",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "25",
+          "pinfunction": "TX_D3",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/83867_RESET_N",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "30",
+          "pinfunction": "Pin_30",
+          "pintype": "passive"
+        },
+        {
+          "ref": "LED602",
+          "pin": "1",
+          "pinfunction": "K",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "3",
+          "pinfunction": "RESET_N",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "43",
+          "pinfunction": "RESET_N",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "26",
+          "pinfunction": "RUN",
+          "pintype": "input"
+        },
+        {
+          "ref": "U604",
+          "pin": "4",
+          "pinfunction": "~{RESET}",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/LED01",
+      "nodes": [
+        {
+          "ref": "R501",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R504",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "RJ501",
+          "pin": "12",
+          "pinfunction": "12",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "47",
+          "pinfunction": "LED_0",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/LED11",
+      "nodes": [
+        {
+          "ref": "R502",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "46",
+          "pinfunction": "LED_1",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/LED21",
+      "nodes": [
+        {
+          "ref": "RJ501",
+          "pin": "13",
+          "pinfunction": "13",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "45",
+          "pinfunction": "LED_2",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/MDC",
+      "nodes": [
+        {
+          "ref": "R609",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "1",
+          "pinfunction": "MDC",
+          "pintype": "input"
+        },
+        {
+          "ref": "U301",
+          "pin": "16",
+          "pinfunction": "MDC",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/DP83867/MDIO",
+      "nodes": [
+        {
+          "ref": "R608",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "36",
+          "pinfunction": "MDIO",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U301",
+          "pin": "17",
+          "pinfunction": "MDIO",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/+3V3_thin",
+      "nodes": [
+        {
+          "ref": "C601",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C602",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C603",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C604",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C605",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C606",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C607",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C608",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "input"
+        },
+        {
+          "ref": "C613",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C614",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "NT1",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R611",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "1",
+          "pinfunction": "IOVDD",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U601",
+          "pin": "10",
+          "pinfunction": "IOVDD",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U601",
+          "pin": "22",
+          "pinfunction": "IOVDD",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U601",
+          "pin": "33",
+          "pinfunction": "IOVDD",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U601",
+          "pin": "42",
+          "pinfunction": "IOVDD",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U601",
+          "pin": "43",
+          "pinfunction": "ADC_AVDD",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U601",
+          "pin": "44",
+          "pinfunction": "VREG_IN",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U601",
+          "pin": "48",
+          "pinfunction": "USB_VDD",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U601",
+          "pin": "49",
+          "pinfunction": "IOVDD",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U602",
+          "pin": "8",
+          "pinfunction": "VCC",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO0",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "1",
+          "pinfunction": "Pin_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "2",
+          "pinfunction": "GPIO0",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO1",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "2",
+          "pinfunction": "Pin_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "3",
+          "pinfunction": "GPIO1",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO2",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "4",
+          "pinfunction": "Pin_4",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "4",
+          "pinfunction": "GPIO2",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO3",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "5",
+          "pinfunction": "Pin_5",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "5",
+          "pinfunction": "GPIO3",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO4",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "6",
+          "pinfunction": "Pin_6",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R608",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "6",
+          "pinfunction": "GPIO4",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO5",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "7",
+          "pinfunction": "Pin_7",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R609",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "7",
+          "pinfunction": "GPIO5",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO6",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "9",
+          "pinfunction": "Pin_9",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "8",
+          "pinfunction": "GPIO6",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO7",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "10",
+          "pinfunction": "Pin_10",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "9",
+          "pinfunction": "GPIO7",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO8",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "11",
+          "pinfunction": "Pin_11",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "11",
+          "pinfunction": "GPIO8",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO9",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "12",
+          "pinfunction": "Pin_12",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "12",
+          "pinfunction": "GPIO9",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO10",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "14",
+          "pinfunction": "Pin_14",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "13",
+          "pinfunction": "GPIO10",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO11",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "15",
+          "pinfunction": "Pin_15",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "14",
+          "pinfunction": "GPIO11",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO12",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "16",
+          "pinfunction": "Pin_16",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "15",
+          "pinfunction": "GPIO12",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO13",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "17",
+          "pinfunction": "Pin_17",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "16",
+          "pinfunction": "GPIO13",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO14",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "19",
+          "pinfunction": "Pin_19",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "17",
+          "pinfunction": "GPIO14",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO15",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "20",
+          "pinfunction": "Pin_20",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "18",
+          "pinfunction": "GPIO15",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO16",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "21",
+          "pinfunction": "Pin_21",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "27",
+          "pinfunction": "GPIO16",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO17",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "22",
+          "pinfunction": "Pin_22",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "28",
+          "pinfunction": "GPIO17",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO18",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "24",
+          "pinfunction": "Pin_24",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "29",
+          "pinfunction": "GPIO18",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO19",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "25",
+          "pinfunction": "Pin_25",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "30",
+          "pinfunction": "GPIO19",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO20",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "26",
+          "pinfunction": "Pin_26",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "31",
+          "pinfunction": "GPIO20",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO21",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "27",
+          "pinfunction": "Pin_27",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "32",
+          "pinfunction": "GPIO21",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO22",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "29",
+          "pinfunction": "Pin_29",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "34",
+          "pinfunction": "GPIO22",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO24",
+      "nodes": [
+        {
+          "ref": "R602",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R604",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "36",
+          "pinfunction": "GPIO24",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO25",
+      "nodes": [
+        {
+          "ref": "R612",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "37",
+          "pinfunction": "GPIO25",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO26_ADC0",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "31",
+          "pinfunction": "Pin_31",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "38",
+          "pinfunction": "GPIO26_ADC0",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO27_ADC1",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "32",
+          "pinfunction": "Pin_32",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "39",
+          "pinfunction": "GPIO27_ADC1",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_GPIO28_ADC2",
+      "nodes": [
+        {
+          "ref": "J601",
+          "pin": "34",
+          "pinfunction": "Pin_34",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "40",
+          "pinfunction": "GPIO28_ADC2",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_OUT",
+      "nodes": [
+        {
+          "ref": "R615",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "21",
+          "pinfunction": "XOUT",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_QSPI_SCLK",
+      "nodes": [
+        {
+          "ref": "U601",
+          "pin": "52",
+          "pinfunction": "QSPI_SCLK",
+          "pintype": "output"
+        },
+        {
+          "ref": "U602",
+          "pin": "6",
+          "pinfunction": "CLK",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_QSPI_SD0",
+      "nodes": [
+        {
+          "ref": "U601",
+          "pin": "53",
+          "pinfunction": "QSPI_SD0",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U602",
+          "pin": "5",
+          "pinfunction": "DI(IO0)",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_QSPI_SD1",
+      "nodes": [
+        {
+          "ref": "U601",
+          "pin": "55",
+          "pinfunction": "QSPI_SD1",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U602",
+          "pin": "2",
+          "pinfunction": "DO(IO1)",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_QSPI_SD2",
+      "nodes": [
+        {
+          "ref": "U601",
+          "pin": "54",
+          "pinfunction": "QSPI_SD2",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U602",
+          "pin": "3",
+          "pinfunction": "WP#(IO2)",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_QSPI_SD3",
+      "nodes": [
+        {
+          "ref": "U601",
+          "pin": "51",
+          "pinfunction": "QSPI_SD3",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U602",
+          "pin": "7",
+          "pinfunction": "HOLD#orRESET#(IO3)",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_QSPI_SS",
+      "nodes": [
+        {
+          "ref": "R610",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R611",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "56",
+          "pinfunction": "QSPI_SS",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "U602",
+          "pin": "1",
+          "pinfunction": "~{CS}",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_SWCLK",
+      "nodes": [
+        {
+          "ref": "J602",
+          "pin": "1",
+          "pinfunction": "Pin_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "24",
+          "pinfunction": "SWCLK",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_SWDIO",
+      "nodes": [
+        {
+          "ref": "J602",
+          "pin": "3",
+          "pinfunction": "Pin_3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "25",
+          "pinfunction": "SWD",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/RP_XIN",
+      "nodes": [
+        {
+          "ref": "C615",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "20",
+          "pinfunction": "XIN",
+          "pintype": "input"
+        },
+        {
+          "ref": "U603",
+          "pin": "2",
+          "pinfunction": "OSC2",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/USB_D_RP+",
+      "nodes": [
+        {
+          "ref": "R605",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "47",
+          "pinfunction": "USB_DP",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "/RP2040/USB_D_RP-",
+      "nodes": [
+        {
+          "ref": "R606",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "46",
+          "pinfunction": "USB_DM",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "name": "GND",
+      "nodes": [
+        {
+          "ref": "C203",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C204",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C205",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C206",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C207",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C208",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C209",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C210",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "input"
+        },
+        {
+          "ref": "C211",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C212",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C213",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C214",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C215",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C216",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C217",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C218",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C219",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C220",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C221",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C222",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C223",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C224",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "input"
+        },
+        {
+          "ref": "C225",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C226",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C227",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C228",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C301",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C302",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "input"
+        },
+        {
+          "ref": "C303",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C304",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C305",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C306",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C307",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C308",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C309",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C310",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C311",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C312",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "input"
+        },
+        {
+          "ref": "C313",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C314",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C315",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C316",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C317",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C318",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "input"
+        },
+        {
+          "ref": "C319",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C320",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C321",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C322",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C323",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C324",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C402",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C403",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C404",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C405",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "input"
+        },
+        {
+          "ref": "C406",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "input"
+        },
+        {
+          "ref": "C408",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C409",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C501",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C502",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C503",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C504",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C505",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C601",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C602",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C603",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C604",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C605",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C606",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C607",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C608",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "input"
+        },
+        {
+          "ref": "C609",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C610",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C611",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "input"
+        },
+        {
+          "ref": "C612",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C613",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C614",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C615",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C616",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C617",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D401",
+          "pin": "2",
+          "pinfunction": "A",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D402",
+          "pin": "1",
+          "pinfunction": "K",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D403",
+          "pin": "2",
+          "pinfunction": "A",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J601",
+          "pin": "13",
+          "pinfunction": "Pin_13",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J601",
+          "pin": "18",
+          "pinfunction": "Pin_18",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J601",
+          "pin": "23",
+          "pinfunction": "Pin_23",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J601",
+          "pin": "28",
+          "pinfunction": "Pin_28",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J601",
+          "pin": "3",
+          "pinfunction": "Pin_3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J601",
+          "pin": "33",
+          "pinfunction": "Pin_33",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J601",
+          "pin": "38",
+          "pinfunction": "Pin_38",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J601",
+          "pin": "8",
+          "pinfunction": "Pin_8",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J602",
+          "pin": "2",
+          "pinfunction": "Pin_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "LED601",
+          "pin": "1",
+          "pinfunction": "-",
+          "pintype": "passive"
+        },
+        {
+          "ref": "NT2",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R204",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R207",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R210",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "input"
+        },
+        {
+          "ref": "R211",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R303",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R403",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R404",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R407",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R504",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R505",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "input"
+        },
+        {
+          "ref": "R601",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R603",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R604",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R607",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "input"
+        },
+        {
+          "ref": "R613",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "input"
+        },
+        {
+          "ref": "RJ501",
+          "pin": "P10",
+          "pinfunction": "P10",
+          "pintype": "passive"
+        },
+        {
+          "ref": "SW601",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "SW602",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U202",
+          "pin": "1",
+          "pinfunction": "K",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U205",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "37",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U207",
+          "pin": "2",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U207",
+          "pin": "4",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U208",
+          "pin": "4",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U208",
+          "pin": "5",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U208",
+          "pin": "6",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U208",
+          "pin": "9",
+          "pinfunction": "EP",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U301",
+          "pin": "49",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U302",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U303",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U401",
+          "pin": "2",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U402",
+          "pin": "11",
+          "pinfunction": "EP",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U402",
+          "pin": "6",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U403",
+          "pin": "2",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U601",
+          "pin": "57",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U602",
+          "pin": "4",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U604",
+          "pin": "1",
+          "pinfunction": "CT",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U604",
+          "pin": "2",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "USB601",
+          "pin": "1",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "USB601",
+          "pin": "12",
+          "pinfunction": "GND",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U206-STRAP_1)",
+      "nodes": [
+        {
+          "ref": "R219",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U206",
+          "pin": "14",
+          "pinfunction": "STRAP_1",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U301-INT/PWDN)",
+      "nodes": [
+        {
+          "ref": "R301",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "44",
+          "pinfunction": "INT/PWDN",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U301-RBIAS)",
+      "nodes": [
+        {
+          "ref": "R303",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U301",
+          "pin": "12",
+          "pinfunction": "RBIAS",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U301-XI)",
+      "nodes": [
+        {
+          "ref": "U301",
+          "pin": "15",
+          "pinfunction": "XI",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U302",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "X301",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U301-XO)",
+      "nodes": [
+        {
+          "ref": "U301",
+          "pin": "14",
+          "pinfunction": "XO",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U303",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "X301",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U601-TESTEN)",
+      "nodes": [
+        {
+          "ref": "NT2",
+          "pin": "1",
+          "pinfunction": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U601",
+          "pin": "19",
+          "pinfunction": "TESTEN",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U604-~{MR})",
+      "nodes": [
+        {
+          "ref": "SW602",
+          "pin": "2",
+          "pinfunction": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U604",
+          "pin": "3",
+          "pinfunction": "~{MR}",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U206-CLKOUT/GPIO_2-Pad16)",
+      "nodes": [
+        {
+          "ref": "U206",
+          "pin": "16",
+          "pinfunction": "CLKOUT/GPIO_2",
+          "pintype": "passive+no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U206-DNC-Pad17)",
+      "nodes": [
+        {
+          "ref": "U206",
+          "pin": "17",
+          "pinfunction": "DNC",
+          "pintype": "no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U206-DNC-Pad18)",
+      "nodes": [
+        {
+          "ref": "U206",
+          "pin": "18",
+          "pinfunction": "DNC",
+          "pintype": "no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U206-DNC-Pad19)",
+      "nodes": [
+        {
+          "ref": "U206",
+          "pin": "19",
+          "pinfunction": "DNC",
+          "pintype": "no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U206-DNC-Pad20)",
+      "nodes": [
+        {
+          "ref": "U206",
+          "pin": "20",
+          "pinfunction": "DNC",
+          "pintype": "no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U301-CLK_OUT-Pad18)",
+      "nodes": [
+        {
+          "ref": "U301",
+          "pin": "18",
+          "pinfunction": "CLK_OUT",
+          "pintype": "output+no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U301-GPIO_0-Pad39)",
+      "nodes": [
+        {
+          "ref": "U301",
+          "pin": "39",
+          "pinfunction": "GPIO_0",
+          "pintype": "bidirectional+no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U301-GPIO_1-Pad40)",
+      "nodes": [
+        {
+          "ref": "U301",
+          "pin": "40",
+          "pinfunction": "GPIO_1",
+          "pintype": "bidirectional+no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U301-JTAG_CLK-Pad20)",
+      "nodes": [
+        {
+          "ref": "U301",
+          "pin": "20",
+          "pinfunction": "JTAG_CLK",
+          "pintype": "input+no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U301-JTAG_TDI-Pad23)",
+      "nodes": [
+        {
+          "ref": "U301",
+          "pin": "23",
+          "pinfunction": "JTAG_TDI",
+          "pintype": "input+no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U301-JTAG_TDO-Pad21)",
+      "nodes": [
+        {
+          "ref": "U301",
+          "pin": "21",
+          "pinfunction": "JTAG_TDO",
+          "pintype": "input+no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U301-JTAG_TMS-Pad22)",
+      "nodes": [
+        {
+          "ref": "U301",
+          "pin": "22",
+          "pinfunction": "JTAG_TMS",
+          "pintype": "input+no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U301-VDDA1P8-Pad13)",
+      "nodes": [
+        {
+          "ref": "U301",
+          "pin": "13",
+          "pinfunction": "VDDA1P8",
+          "pintype": "power_in+no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U301-VDDA1P8-Pad48)",
+      "nodes": [
+        {
+          "ref": "U301",
+          "pin": "48",
+          "pinfunction": "VDDA1P8",
+          "pintype": "power_in+no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U601-GPIO23-Pad35)",
+      "nodes": [
+        {
+          "ref": "U601",
+          "pin": "35",
+          "pinfunction": "GPIO23",
+          "pintype": "bidirectional+no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U601-GPIO29_ADC3-Pad41)",
+      "nodes": [
+        {
+          "ref": "U601",
+          "pin": "41",
+          "pinfunction": "GPIO29_ADC3",
+          "pintype": "bidirectional+no_connect"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U602-EP-Pad9)",
+      "nodes": [
+        {
+          "ref": "U602",
+          "pin": "9",
+          "pinfunction": "EP",
+          "pintype": "unspecified+no_connect"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.13)
+
+if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/pico_sdk_import.cmake")
+    include(pico_sdk_import.cmake)
+elseif(DEFINED PICO_SDK_PATH)
+    include(${PICO_SDK_PATH}/external/pico_sdk_import.cmake)
+elseif(DEFINED ENV{PICO_SDK_PATH})
+    include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
+else()
+    message(FATAL_ERROR "Set PICO_SDK_PATH or copy pico_sdk_import.cmake here")
+endif()
+
+project(mdio_scan C CXX ASM)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
+pico_sdk_init()
+
+add_executable(mdio_scan main.c)
+target_link_libraries(mdio_scan pico_stdlib hardware_gpio)
+pico_enable_stdio_usb(mdio_scan 1)
+pico_enable_stdio_uart(mdio_scan 0)
+pico_add_extra_outputs(mdio_scan)
