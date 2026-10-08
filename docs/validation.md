@@ -41,13 +41,13 @@ USBシリアルで旧スキャナーの稼働とIDを確認し、旧UF2を保存
 - PHY 8: ID 2000a284、BMCR 0140、BMSR 0141、link down
 - scanでは0と8のみ検出。個別readでも旧スキャナーと同じIDを取得。
 - ログ: [serial-20260913.log](serial-20260913.log)
-- 書き込み済みUF2: build-artifacts/converter_soft.uf2
-- 旧プログラム: build-artifacts/before-slow-20260913.uf2
+- 当時書き込んだUF2と旧プログラムは検証端末で保管し、このソースリポジトリには含めない
 
 USBとClause 22の読み取りは実機確認済み。MMDアクセス・PHY設定書き込み・リンク確立・
 双方向Ethernet転送は未検証。MDC波形の測定も未実施。
 
-UF2 SHA-256: `4a750ffef7659784ae24b85bae0e603cdefa4e9f35c2cb7021af3b42a76c6b17`
+当時書き込んだ`converter_soft.uf2`のSHA-256:
+`4a750ffef7659784ae24b85bae0e603cdefa4e9f35c2cb7021af3b42a76c6b17`
 
 ## 2026-09-13: 2台目の準備
 

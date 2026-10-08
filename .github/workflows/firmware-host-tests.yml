@@ -8,7 +8,7 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  host-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,3 +26,62 @@ jobs:
         run: >-
           ctest --test-dir build-host
           --output-on-failure
+
+  firmware-build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        role: [diagnostic, master, slave]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out Pico SDK 2.2.0
+        uses: actions/checkout@v4
+        with:
+          repository: raspberrypi/pico-sdk
+          ref: 2.2.0
+          path: pico-sdk
+          submodules: recursive
+
+      - name: Install Arm toolchain and Ninja
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes gcc-arm-none-eabi libnewlib-arm-none-eabi libusb-1.0-0-dev ninja-build
+
+      - name: Configure ${{ matrix.role }} firmware
+        run: >-
+          cmake -G Ninja -S .
+          -B build-${{ matrix.role }}
+          -DPICO_SDK_PATH=${{ github.workspace }}/pico-sdk
+          -DCONVERTER_T1_ROLE=${{ matrix.role }}
+
+      - name: Build ${{ matrix.role }} firmware
+        run: cmake --build build-${{ matrix.role }}
+
+  mdio-scanner-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out Pico SDK 2.2.0
+        uses: actions/checkout@v4
+        with:
+          repository: raspberrypi/pico-sdk
+          ref: 2.2.0
+          path: pico-sdk
+          submodules: recursive
+
+      - name: Install Arm toolchain and Ninja
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes gcc-arm-none-eabi libnewlib-arm-none-eabi libusb-1.0-0-dev ninja-build
+
+      - name: Configure MDIO scanner
+        run: >-
+          cmake -G Ninja -S tools/mdio-scan
+          -B tools/mdio-scan/build
+          -DPICO_SDK_PATH=${{ github.workspace }}/pico-sdk
+
+      - name: Build MDIO scanner
+        run: cmake --build tools/mdio-scan/build
