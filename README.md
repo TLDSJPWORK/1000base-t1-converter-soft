@@ -1,21 +1,30 @@
 # 1000base-t1-converter-soft
 
-1000BASE-T1コンバーター基板のRP2040用ソフトウェアです。
-基板を純粋な1000BASE-T／1000BASE-T1メディアコンバーターとして起動し、
-USB CDCからPHYの検出、レジスタ操作、リンク監視も行える管理ソフトウェアです。
-起動時に実機で確定したDP83867のMirror解除とRGMII遅延を適用します。
+学習用1000BASE-T1メディアコンバーターのRP2040用ファームウェアです。
+PHYの起動設定と、USB接続による状態確認・レジスタ操作に対応しています。
 
-Ethernetデータは基板上の2個のPHY間をRGMIIで流れます。
-RP2040はMDIO管理を担当し、Ethernetフレームのソフトウェア転送は行いません。
+EthernetフレームはDP83TG720とDP83867の間をRGMIIで転送します。
+RP2040はMDIO経由でPHYを管理します。
 
-対応するKiCad設計と製造資料は
-[`TLDSJPWORK/1000base-t1-converter`](https://github.com/TLDSJPWORK/1000base-t1-converter)
-で公開します。
+基板の設計データと接続方法は、[1000base-t1-converter](https://github.com/TLDSJPWORK/1000base-t1-converter)を参照してください。
+
+## 主な機能
+
+- 電源投入時にPHYの通信設定を適用
+- 基板上のスイッチによる1000BASE-T1のmaster／slave選択
+- USB CDCシリアルからのPHY検出、リンク状態の確認・監視
+- Clause 22・MMDレジスタの読み書き
+
+USBをPCに接続していなくても、電源投入時にPHYの起動設定を行います。
 
 ## ビルド
 
-Pico SDK 2.2.0、CMake、Arm GNU Toolchain、Python 3を用意してください。
-SDKのTinyUSBサブモジュールも必要です。SDKはこのリポジトリに含めません。
+次の環境を用意してください。
+
+- Raspberry Pi Pico SDK 2.2.0（TinyUSBサブモジュールを含む）
+- CMake
+- Arm GNU Toolchain（動作確認版：14.2.1）
+- Python 3
 
 ```sh
 export PICO_SDK_PATH=/path/to/pico-sdk
@@ -23,90 +32,80 @@ cmake -S . -B build -DPICO_TOOLCHAIN_PATH=/path/to/arm-toolchain
 cmake --build build -j
 ```
 
-SDK付属のpioasm・picotoolを既にインストールしている場合は、CMakeに
-`-Dpioasm_DIR=/path/to/pioasm` と `-Dpicotool_DIR=/path/to/picotool` を渡せます。
-未指定の場合の補助ツールのビルド・取得はPico SDKの仕組みに従います。
+書込み用ファイルは`build/converter_soft.uf2`です。デバッグ用の`build/converter_soft.elf`も生成されます。
+ボード定義は`include/boards/converter_rp2040.h`にあります。
 
-出力は `build/converter_soft.uf2` と `build/converter_soft.elf` です。
-ボード定義は `include/boards/converter_rp2040.h`。汎用PicoのGPIO機能は使用しません。
+pioasm・picotoolの取得とビルドはPico SDKが行います。既に用意している場合は、
+`-Dpioasm_DIR=/path/to/pioasm`と`-Dpicotool_DIR=/path/to/picotool`で指定できます。
 
-## 書き込みと操作
+## 書込みと接続
 
-既定は内部プルアップ付き50kHzの診断モードです。電源・接続を確認したうえで、
-基板をBOOTSELモードで接続し、UF2を書き込みます。
-USB CDCシリアルを開き、改行付きでコマンドを送信してください。
-端末のローカルエコーを有効にすると入力を確認できます。CDCのボーレート設定は任意です。
-USB接続を待つ無限待機はありません。起動時はU203のT1 master/slaveストラップを
-通常どおり尊重し、DP83867のMirror modeを解除してRGMII TX/RX遅延を2nsへ設定します。
-設定は読み戻して、USB接続時の `Media config result` に結果と値を表示します。
+1. USBを含む全ての電源を外します。
+2. 基板上のU203でmaster／slaveを選択し、U205を通常動作側に設定します。
+3. Bootボタンを押したまま、データ通信対応USBケーブルでPCへ接続します。
+4. `RPI-RP2`ドライブが表示されたらボタンを離し、`converter_soft.uf2`をコピーします。
+5. ファームウェアの起動後、USB CDCシリアルを開きます。
+6. 起動ログの`Media config result: OK`を確認します。
+
+配線とスイッチの接点設定は[本体の取扱説明書](https://github.com/TLDSJPWORK/1000base-t1-converter/blob/main/docs/user-manual.md)を参照してください。
+
+## USB診断
+
+シリアル端末から、改行付きでコマンドを送信します。ボーレート設定は任意です。
+端末のローカルエコーを有効にすると、入力したコマンドを確認できます。
+
+最初に`scan`でPHYを検出し、`status`でリンク状態を確認します。
+継続して監視する場合は`watch on`、停止する場合は`watch off`を実行します。
 
 ```text
-help
 scan
 status
 watch on
-watch off
+```
+
+| コマンド | 機能 |
+| --- | --- |
+| `help` | コマンド一覧を表示 |
+| `scan` | PHYアドレス0〜31を走査 |
+| `status` | 検出したPHYのリンク状態とBMCR・BMSRを表示 |
+| `watch on` / `watch off` | 1秒周期でリンク変化・MDIO通信異常の監視を開始／停止 |
+| `read PHY REG` | Clause 22レジスタを読み取り |
+| `write PHY REG VALUE` | Clause 22レジスタへ書込み |
+| `mread PHY DEV REG` | MMDレジスタを読み取り |
+| `mwrite PHY DEV REG VALUE` | MMDレジスタへ書込み |
+
+`status`と`watch`は、`scan`で検出したPHYが対象です。
+数値は10進数、または`0x`付きの16進数で指定します。
+
+例えば、アドレス8のPHY IDレジスタとMMDレジスタを読む場合は、次のように入力します。
+
+```text
 read 8 2
 mread 8 31 0x45d
 ```
 
-アドレス8は例です。`scan` の結果で置き換えてください。
-PHYアドレスを既存スキャナーの想定値0/8に固定していません。
+書込み後は、対象レジスタを読み戻して設定を確認してください。
+MMDの読み取りでも、内部ではアドレス選択用レジスタへの書込みを行います。
+USBコマンドで変更した設定はフラッシュに保存されず、再起動時には起動設定が適用されます。
 
-| コマンド | 機能 |
+## PHYの起動設定
+
+通常版は、U203で選択したmaster／slaveを維持し、次の設定を適用します。
+
+| PHY | 設定 |
 | --- | --- |
-| `scan` | PHYアドレス0〜31のIDレジスタを検出 |
-| `status` | 検出PHYのBMCR/BMSRと現在のリンク状態 |
-| `watch on/off` | 1秒ごとにリンク変化と通信異常を報告 |
-| `read PHY REG` | Clause 22読み取り |
-| `write PHY REG VALUE` | Clause 22書き込み |
-| `mread PHY DEV REG` | Clause 22経由のMMD読み取り |
-| `mwrite PHY DEV REG VALUE` | Clause 22経由のMMD書き込み |
+| DP83867（アドレス0） | Mirror modeを解除し、RGMIIのTX・RX内部遅延を各2.0nsに設定 |
+| DP83TG720（アドレス8） | RGMIIのTX・RX内部遅延を無効化 |
 
-数値は10進または `0x` 付き16進。範囲外や長すぎる入力は拒否します。
-読み取り時は2ビットのターンアラウンドを送り、2ビット目のLOWを確認します。
-BMSRはラッチLOWに対応して2回読み、2回目を現在のリンクとして表示します。
+設定値は読み戻し、USB接続時に`Media config result`とレジスタ値を表示します。
+MDIOは内部プルアップを使用し、MDCは50kHzで動作します。
+接続と通信条件の詳細は[基板情報](docs/board.md)を参照してください。
 
-書き込みコマンドは明示的な操作であり、PHYの動作を変えます。
-Clause 22書き込み自体にはACKがないため、送信完了と書き込み成功を区別します。
-対象PHYの応答を事前確認しますが、設定の適用は該当レジスタの読み戻しで確認してください。
-MMD読み取りもREGCR/ADDARのアドレス選択のため書き込みを行います。
-手動コマンドの設定はフラッシュ保存しません。メディアコンバーター用の起動設定は、
-RP2040が起動するたびに再適用します。
+### ソフトウェアで役割を固定する場合
 
-## 検証
-
-```sh
-cmake -S . -B build-host -DCONVERTER_HOST_TESTS=ON
-cmake --build build-host
-ctest --test-dir build-host --output-on-failure
-```
-
-[検証記録と実機確認手順](docs/validation.md) を参照してください。
-UF2のビルド成功は、実機でのMDIO通信・Ethernet転送成功を意味しません。
-
-2026-09-14に2台を `Mac ↔ converter ↔ converter ↔ Raspberry Pi` と接続し、
-1000BASE-T full-duplex、両T1 PHYリンク、ARP、20回のping（損失0%）、SSHポート到達を確認しました。
-
-## 構成
-
-- `src/`: PIO MDIOドライバ、フレーム生成、MMDアクセス、USBコマンド
-- `include/`: 公開APIと専用ボード定義
-- `tests/`: ホスト上で実行するプロトコルテスト
-- `docs/`: 回路図の根拠・確認手順
-- `tools/extract_board.py`: KiCadネットリストと回路図ハッシュの抽出
-- `tools/mdio-scan/`: 初期立ち上げ用の最小構成MDIOスキャナー
-
-設計上の意思決定はハードウェアリポジトリの
-[`docs/design-decisions/`](https://github.com/TLDSJPWORK/1000base-t1-converter/tree/main/docs/design-decisions)
-に記録しています。
-このフォルダ単独でビルドでき、スキャナーや回路図へのビルド依存はありません。
-
-## 2台構成の役割別ビルド
-
-同じ基板を対向接続するときは、一方をmaster、もう一方をslaveとしてビルドします。
-起動時にT1 PHYのPMA制御（MMD 1、レジスタ0x834）へ役割を設定し、
-値が変わった場合だけソフト再起動を行います。読み戻し結果はUSB接続時に表示します。
+通常は両台とも`converter_soft.uf2`を使用し、基板上のU203で役割を選択します。
+試験などでソフトウェアから役割を固定する場合は、次のオプションを指定します。
+**役割固定版はU203のmaster／slave設定を上書きします。**
 
 ```sh
 cmake -S . -B build-master -DCONVERTER_T1_ROLE=master
@@ -115,26 +114,47 @@ cmake -S . -B build-slave -DCONVERTER_T1_ROLE=slave
 cmake --build build-slave -j
 ```
 
-成果物はそれぞれ `converter_soft_master.uf2` と `converter_soft_slave.uf2` です。
-既定値 `diagnostic` は役割を変更しません。
+| `CONVERTER_T1_ROLE` | 動作 | UF2ファイル名 |
+| --- | --- | --- |
+| `diagnostic`（既定値） | U203の役割設定を維持 | `converter_soft.uf2` |
+| `master` | masterに固定 | `converter_soft_master.uf2` |
+| `slave` | slaveに固定 | `converter_soft_slave.uf2` |
 
-## 低速診断モード（0.1.1）
+いずれもメディアコンバーターの起動設定を行います。
 
-外付けプルアップなしで低速なら読み取れるというユーザーの実機確認に基づき、
-MDCを50kHz、MDIOの内部プルアップを有効にしました。フレーム間は20µs待機します。
-以前のスキャナーと同様の低速条件ですが、PIO版でもPHY 0/8のID読み取りを実機確認済みです。
-PHYの規定MDC周波数範囲への適合を示すモードではありません。
+## 制限事項
 
-## メディアコンバーター起動設定（0.3.0）
+MDIO管理通信のMDCは50kHzです。DP83TG720Rのデータシートに示される2.5〜20MHzの範囲を下回っており、規定範囲内での動作ではありません。
+Rev1.0基板では外付けプルアップ抵抗を未実装とし、RP2040の内部プルアップを使用したこの設定で、PHYの設定・状態読取りとメディアコンバーターとしての通信を確認しています。
+実機での動作確認は、規定範囲外のMDIO動作を保証するものではありません。
 
-DP83867のストラップで意図せず有効になったMirror modeを解除します。Mirror設定を
-変更した場合だけDP83867をソフト再起動します。その後、RGMIICTLでTX/RX内部遅延を
-有効化し、遅延量をRGMIIDCTL `0x0077`（各2.0ns）に設定します。
-既存値の上位8bitは保持し、各設定を読み戻して一致しなければUSBへエラーを表示します。
+この周波数はPHYの管理通信に用いるもので、Ethernetの通信速度（1000Mbps）とは別です。
+詳細は[基板情報](docs/board.md)と[TI DP83TG720R-Q1データシート](https://www.ti.com/lit/ds/symlink/dp83tg720r-q1.pdf)を参照してください。
 
-実機ではMirror解除後に1000BASE-Tリンクが成立し、RGMIIDCTLを`0x0017`から
-`0x0077`へ変更した後に双方向のIP疎通が成立しました。DP83TG720側の内部遅延は
-TX/RX内部遅延を明示的に無効化し、両PHYで遅延を重複させません。
+## 動作確認とテスト
+
+Rev1.0基板2台を`Mac ↔ コンバーター ↔ コンバーター ↔ Raspberry Pi`と接続し、
+1000BASE-T full-duplex、両T1 PHYのリンク、ARP、20回のping（損失0%）、TCP/22への接続を確認しています。
+確認条件と範囲は[動作確認・テスト](docs/validation.md)を参照してください。
+
+MDIOフレーム生成などのホストテストは、次のコマンドで実行できます。
+
+```sh
+cmake -S . -B build-host -DCONVERTER_HOST_TESTS=ON
+cmake --build build-host
+ctest --test-dir build-host --output-on-failure
+```
+
+## ソース構成
+
+| フォルダ・ファイル | 内容 |
+| --- | --- |
+| `src/` | PIO MDIOドライバ、PHY起動設定、USBコマンド |
+| `include/` | ヘッダーファイル・ボード定義 |
+| `tests/` | ホスト上で実行するテスト |
+| `docs/` | 基板情報・動作確認結果 |
+| `tools/extract_board.py` | KiCad回路図からの部品・接続情報の抽出 |
+| `tools/mdio-scan/` | 補助診断用MDIOスキャナー |
 
 ## ライセンス
 
